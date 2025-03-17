@@ -3,4 +3,61 @@ body {
     padding: 0;
     font-family: "Lobster", sans-serif;
     font-weight: 400;
+    background-color: #cebf91;
+}
+header {
+    height: 14vh;
+    color:black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 70px;
+    color:#795548;
+}
+main {
+    height: 72vh;
+}
+
+.container-button {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 72vh;
+
+}
+
+.upper-btn {
+    display: flex;
+
+}
+
+footer {
+    display:flex;
+    justify-content: space-around;
+    height: 14vh;
+    align-items: center;
+    font-size: 12px;
+    background-color: #795548;
+}
+.footer-text {
+    font-family: 'Franklin Gothic Medium', Arial;
+    position: fixed;
+}
+
+.icons, .footer-text {
+    color:#cebf91;
+    font-size: 24px;
+    scale:125%
+    /*background-color: black;*/
+  }
+
+.contacts {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 25px;
+    padding-left: 1700px;
 }
