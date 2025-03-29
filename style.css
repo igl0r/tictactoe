@@ -61,3 +61,26 @@ footer {
     gap: 25px;
     padding-left: 1700px;
 }
+
+.game-container {
+    display:none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 72vh;
+}
+
+.board {
+    display:grid;
+    grid-template-columns: repeat(3, 100px);
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    border: 2px solid #795548;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}

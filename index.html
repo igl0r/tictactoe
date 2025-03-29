@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="animation.css">
     <script src="script.js" defer></script>
     <script src="animation.js" defer></script>
+    <script src="LocalGame.js" defer></script>
     <link type="Image/x-icon" href="/src/tictactoe.png" rel="icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,10 +27,24 @@
     </main>
     <div class="container-button">
         <div class="upper-btn">
-        <button>Локальная игра</button>
+        <button class="local-game">Локальная игра</button>
         <button>Игра по сети</button>
     </div>
         <button>Игра с ботом</button>
+    </div>
+    <div class="game-container">
+        <div class="board">
+            <div class="cell" data-index="0"></div>
+            <div class="cell" data-index="1"></div>
+            <div class="cell" data-index="2"></div>
+            <div class="cell" data-index="3"></div>
+            <div class="cell" data-index="4"></div>
+            <div class="cell" data-index="5"></div>
+            <div class="cell" data-index="6"></div>
+            <div class="cell" data-index="7"></div>
+            <div class="cell" data-index="8"></div>
+        </div>
+        <button class="restart">Заново</button>
     </div>
     <footer>
         <div class="footer-text">Copyright © 2025</div>
