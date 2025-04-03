@@ -20,20 +20,6 @@ main {
     height: 72vh;
 }
 
-.container-button {
-    display: none;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 72vh;
-
-}
-
-.upper-btn {
-    display: flex;
-
-}
-
 footer {
     display:flex;
     justify-content: space-around;

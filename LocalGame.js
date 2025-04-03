@@ -1,9 +1,7 @@
 let local_game_btn = document.querySelector('.local-game')
-let container_btn1 = document.querySelector('.container-button')
 let game_container = document.querySelector('.game-container')
 let board = document.querySelector('.board')
 local_game_btn.addEventListener('click', function(){
-    container_btn1.style.display='none'
     game_container.style.display='flex'
 
 })
