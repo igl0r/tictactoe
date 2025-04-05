@@ -69,3 +69,16 @@ restart.addEventListener('click', function(){
     game_active = true
     current_player = 'X'
 })
+
+// Анимация клеток
+
+cells.forEach(cell=>{
+    cell.addEventListener('click', function(){
+        cell.style.transform='rotate(360deg) scale(1.5)'
+        cell.style.transition='all 0.5s ease-in-out'
+        setTimeout(() => {
+            cell.style.transform='rotate(720deg) scale(1)'
+            cell.style.transition='all 0.5s ease-in-out'
+        }, 500)
+    })
+})
