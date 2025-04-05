@@ -1,6 +1,16 @@
 let local_game_btn = document.querySelector('.local-game')
 let game_container = document.querySelector('.game-container')
 let board = document.querySelector('.board')
+let explosion_button = document.querySelector('#explosion-button')
+let main = document.querySelector('main')
+let restart = document.querySelector('.restart')
+
+explosion_button.addEventListener('click', function() {
+    setTimeout(() => {
+        main.style.display = 'none'
+    }, 1000);
+    
+})
 local_game_btn.addEventListener('click', function(){
     game_container.style.display='flex'
 
@@ -56,4 +66,9 @@ local_game_btn.addEventListener('click', function(){
     
 
 //})
-
+restart.addEventListener('click', function(){
+    board_array.fill(null)
+    Array.from(cells).forEach(cell=>cell.textContent="")
+    game_active = true
+    current_player = 'X'
+})
