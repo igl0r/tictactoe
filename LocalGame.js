@@ -8,12 +8,9 @@ let restart = document.querySelector('.restart')
 explosion_button.addEventListener('click', function() {
     setTimeout(() => {
         main.style.display = 'none'
+        game_container.style.display='flex'
     }, 1000);
     
-})
-local_game_btn.addEventListener('click', function(){
-    game_container.style.display='flex'
-
 })
 //document.addEventListener('DOMContentLoaded', function(){
     let cells = document.querySelectorAll('.cell')
@@ -59,7 +56,7 @@ local_game_btn.addEventListener('click', function(){
             event.target.textContent = current_player
 
             if (!check_user()){
-                current_player = current_player === 'X' ? '0' : 'X'
+                current_player = current_player === 'X' ? 'O' : 'X'
             }
         }
         Array.from(cells).forEach(cell => cell.addEventListener('click', click_response))
