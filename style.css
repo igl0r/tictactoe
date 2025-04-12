@@ -22,11 +22,13 @@ main {
 
 footer {
     display:flex;
-    justify-content: space-around;
+    justify-content: center;
     height: 14vh;
     align-items: center;
     font-size: 12px;
     background-color: #795548;
+    gap: 30px;
+    width: 100vw;
 }
 .footer-text {
     font-family: 'Franklin Gothic Medium', Arial;
@@ -42,10 +44,11 @@ footer {
 
 .contacts {
     display: flex;
-    justify-content: left;
+    justify-content: flex-end;
     align-items: center;
     gap: 25px;
-    padding-left: 1700px;
+    margin-left: 90vw;
+    /*padding-left: 1700px;*/
 }
 
 .game-container {
