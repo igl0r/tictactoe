@@ -16,6 +16,11 @@ header {
     font-size: 70px;
     color:#795548;
 }
+/*video {
+    width: 100vw;
+    height: 36vh;
+}*/
+
 main {
     height: 72vh;
 }

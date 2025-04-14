@@ -4,10 +4,12 @@ let board = document.querySelector('.board')
 let explosion_button = document.querySelector('#explosion-button')
 let main = document.querySelector('main')
 let restart = document.querySelector('.restart')
+let video = document.querySelector('video')
 
 explosion_button.addEventListener('click', function() {
     setTimeout(() => {
         main.style.display = 'none'
+        video.style.display = 'none'
         game_container.style.display='flex'
     }, 1000);
     
